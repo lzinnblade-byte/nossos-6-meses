@@ -1,0 +1,72 @@
+:root {
+    --ouro: #FFC300;
+    --marrom: #3D2B1F;
+    --creme: #FFFBEB;
+}
+
+body {
+    margin: 0;
+    background: var(--creme);
+    font-family: 'Segoe UI', serif;
+    color: var(--marrom);
+    text-align: center;
+}
+
+.music-player {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('sua-foto-capa.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.relogio-digital {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: var(--marrom);
+    color: var(--ouro);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.foto-card {
+    background: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.foto-card img { width: 100%; border-radius: 5px; }
+
+.legenda { padding: 15px; font-style: italic; font-size: 1.1rem; }
+
+.btn-girassol {
+    background: var(--ouro);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.girassol-fall {
+    position: fixed;
+    top: -50px;
+    z-index: 999;
+    animation: fall 4s linear forwards;
+}
+
+@keyframes fall {
+    to { transform: translateY(110vh) rotate(360deg); }
+}
